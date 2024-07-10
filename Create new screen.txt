@@ -1,0 +1,67 @@
+select * from usmdba.usm_menu order by creation_date desc;
+
+select * from usmdba.usm_menu where menu_name='Object Builder' order by creation_date desc;
+
+select * from usmdba.usm_menu where menu_p_code='06103005' order by creation_date desc;
+
+
+INSERT INTO usmdba.usm_menu VALUES(
+'06103005',
+'Knowledge Graph',
+'knowledgeGraph',
+'06103',
+'1',
+'1',
+'0',
+'0',
+'001',
+'0',
+null,
+CURRENT_DATE,
+null,
+1,
+null,
+'fas fa-circle fa-2xs',
+null
+);
+
+
+INSERT INTO usmdba.usm_menu VALUES(
+'06103005001',
+'MasterLink Analysis',
+'masterLink',
+'06103005',
+'1',
+'1',
+'0',
+'0',
+'001',
+'0',
+null,
+CURRENT_DATE,
+null,
+1,
+null,
+'fas fa-circle fa-2xs',
+null
+);
+
+INSERT INTO usmdba.usm_menu VALUES(
+'06103005002',
+'Executed Reports',
+'executedReports',
+'06103005',
+'1',
+'1',
+'0',
+'0',
+'001',
+'0',
+null,
+CURRENT_DATE,
+null,
+1,
+null,
+'fas fa-circle fa-2xs',
+null
+);
